@@ -4,6 +4,8 @@
 
 Every time new frontend code is deployed the production code is pushed here on [github](https://github.com/kuus/contexta) and the source code on the private repo on [gitlab](https://gitlab.com/kuus/contexta)
 
+The website is always accessible from [contexta.kunderikuus.net](http://contexta.kunderikuus.net) (*http*) and [kuus.github.io/contexta](https://kuus.github.io/contexta) (*https*)
+
 ## Deploy
 
 Simply copy all the files from this repo in your server folder.
