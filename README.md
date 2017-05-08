@@ -23,9 +23,35 @@ Note that you don't have to define all these the backend URLs but just those who
 
 ### Run locally
 
-Open the terminal in the folder with the files of this repo and run a simple local server, e.g. [with python](http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python):
+Delete the html tag `<base href="/contexta/">` from the file `index.html` and then open the terminal in the folder with the files of this repo and run a simple local server, e.g. [with python](http://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python):
 ```bash
 $ cd /home/contexta/app
 $ python -m SimpleHTTPServer
 ```
 Open the browser at http://127.0.0.1:8000
+
+
+## Source
+
+### Starter
+
+Project bootstrapped with [NG6-starter](https://github.com/AngularClass/NG6-starter)
+
+Create a new component with:
+```
+gulp component -- --name footer --parent ../common
+```
+
+### Libraries:
+
+- [angular-material](https://github.com/angular/material)
+- [angular-data-grid](https://github.com/angular-data-grid/angular-data-grid.github.io)
+- [angular-material-data-table](https://github.com/daniel-nagy/md-data-table) (only css)
+- [xml2js](https://www.npmjs.com/package/xml2js)
+- [zenscroll](https://github.com/zengabor/zenscroll)
+- ...see package.json
+
+
+### To keep an eye on
+
+- angular material datepicker issues: http://stackoverflow.com/questions/41324991/angular-material-datepicker-opening-position-is-wrong-in-chrome and [github issue](https://github.com/angular/material/issues/10144) and [this issue too](https://github.com/angular/material/issues/10209)
