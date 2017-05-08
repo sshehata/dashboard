@@ -8,7 +8,7 @@ The website is always accessible from [contexta.kunderikuus.net](http://contexta
 
 ## Deploy
 
-Remove the meta tag `<base href="/contexta">` from the file in this repository `index.html` and then copy all the files from this repository in your server folder.
+Delete the html tag `<base href="/contexta/">` from the file `index.html` and then copy all the files from this repository in your server folder.
 
 ### Switch backend urls
 Before to deploy open the file `index.html` and edit the `<script>` tag that you see [in these lines](https://github.com/kuus/contexta/blob/gh-pages/index.html#L2-L4) with the urls you need:
@@ -29,29 +29,3 @@ $ cd /home/contexta/app
 $ python -m SimpleHTTPServer
 ```
 Open the browser at http://127.0.0.1:8000
-
-
-## Source
-
-### Starter
-
-Project bootstrapped with [NG6-starter](https://github.com/AngularClass/NG6-starter)
-
-Create a new component with:
-```
-gulp component -- --name footer --parent ../common
-```
-
-### Libraries:
-
-- [angular-material](https://github.com/angular/material)
-- [angular-data-grid](https://github.com/angular-data-grid/angular-data-grid.github.io)
-- [angular-material-data-table](https://github.com/daniel-nagy/md-data-table) (only css)
-- [xml2js](https://www.npmjs.com/package/xml2js)
-- [zenscroll](https://github.com/zengabor/zenscroll)
-- ...see package.json
-
-
-### To keep an eye on
-
-- angular material datepicker issues: http://stackoverflow.com/questions/41324991/angular-material-datepicker-opening-position-is-wrong-in-chrome and [github issue](https://github.com/angular/material/issues/10144) and [this issue too](https://github.com/angular/material/issues/10209)
